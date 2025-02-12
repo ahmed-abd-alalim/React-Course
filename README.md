@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center">React Course</h1>
+<h1 align="center">⚛️ React Course Repository</h1>
 Welcome to the React Course Repository! 🚀 This repository contains all the essential code, links used, and projects covered in the React-Course.
 <br />
 <br />
