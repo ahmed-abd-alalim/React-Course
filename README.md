@@ -7,6 +7,7 @@ Welcome to the React Course Repository! 🚀 This repository contains all the es
 
 ![React Course Desktop Demo](./website-demo-image/GalaxyNFTPanen.jpg "Desktop Demo")
 
+
 ## programming language and tools
 
 <p>
@@ -14,6 +15,7 @@ Welcome to the React Course Repository! 🚀 This repository contains all the es
     <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,react,vscode,&perline=6" />
    </a>
 </p>
+
 
 ## Contact
 
