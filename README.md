@@ -5,7 +5,7 @@ Welcome to the React Course Repository! 🚀 This repository contains all the es
 <br />
 </div>
 
-![React Course Desktop Demo](./website-demo-image/GalaxyNFTPanen.jpg "Desktop Demo")
+![React Course Desktop Demo](./repository-assets/react-course.jpg "Desktop Demo")
 
 
 ## programming language and tools
