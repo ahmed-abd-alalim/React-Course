@@ -5,8 +5,7 @@ Welcome to the React Course Repository! 🚀 This repository contains all the es
 <br />
 </div>
 
-![React Course Desktop Demo](./repository-assets/react-course.jpg "Desktop Demo")
-
+![React Course](./repository-assets/banner.jpg "React Course Banner")
 
 ## programming language and tools
 
@@ -15,7 +14,6 @@ Welcome to the React Course Repository! 🚀 This repository contains all the es
     <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,react,vscode,&perline=6" />
    </a>
 </p>
-
 
 ## License
 
