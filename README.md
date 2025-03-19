@@ -8,13 +8,21 @@
 
 ### Tools
 
-<img src="https://skillicons.dev/icons?i=vscode" />
+<p>
+    <a href="#">
+      <img src="https://skillicons.dev/icons?i=vscode" />
+    </a>
+</p>
 
 ---
 
 ### Programming Language
 
-<img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,react" />
+<p>
+    <a href="#">
+      <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,react" />
+    </a>
+</p>
 
 ---
 
