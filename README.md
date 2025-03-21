@@ -505,6 +505,8 @@ console.log(first, third); // Output: 10 30
 
 ---
 
+<a id="client-task"></a>
+
 ### 💡 Client Task
 
 ```bash
