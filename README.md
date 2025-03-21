@@ -53,7 +53,7 @@
   - [React Official Website](#react-official-website)
   - [Install React](#install-react)
 
-- **[💡 Client Task](#💡-client-task)**
+- **[💡 Client Task](#client-task)**
 
 ---
 
@@ -269,36 +269,36 @@ console.log(first, third); // Output: 10 30
 
 6.  #### Function Type
 
-        1.  ##### Function Declaration
+    1.  ##### Function Declaration
 
-            ```bash
-              function greet() {
-                return "Hello!";
-              }
+        ```bash
+          function greet() {
+            return "Hello!";
+          }
 
-              console.log(greet()); // "Hello!"
-            ```
+          console.log(greet()); // "Hello!"
+        ```
 
-        ***
+    ***
 
-        2.  ##### Function Expression Anonymous
+    2.  ##### Function Expression Anonymous
 
-            ```bash
-              const greet = function() {
-                return "Hello!";
-              };
+        ```bash
+          const greet = function() {
+            return "Hello!";
+          };
 
-              console.log(greet()); // "Hello!"
-            ```
+          console.log(greet()); // "Hello!"
+        ```
 
-        ***
+    ***
 
-        3.  ##### Arrow Function (ES6)
+    3.  ##### Arrow Function (ES6)
 
-            ```bash
-              const greet = () => "Hello!";
-              console.log(greet()); // "Hello!"
-            ```
+        ```bash
+          const greet = () => "Hello!";
+          console.log(greet()); // "Hello!"
+        ```
 
 > [!TIP]
 > Exercise: [w3schools - Function Declaration](https://www.w3schools.com/js/exercise.asp?x=xrcise_functions1)<br>
