@@ -10,12 +10,6 @@
 
 - **[Revision Of JS(ES6)](#revision-of-js-es6)**
 
-  - [Scope](#scope)
-
-    - [Global-scope](#global-scope)
-    - [Function-scope](#function-scope)
-    - [Block-scope](#block-scope)
-
   - [VAR vs LET vs CONST](#var-vs-let-vs-const)
   - [JavaScript Destructuring](#javascript-destructuring)
   - [Spread Operator](#spread-operator)
@@ -31,6 +25,12 @@
     - [map()](#map)
     - [filter()](#filter)
     - [forEach()](#foreach)
+
+  - [Scope](#scope)
+
+    - [Global-scope](#global-scope)
+    - [Function-scope](#function-scope)
+    - [Block-scope](#block-scope)
 
   - [Modules (import and export)](#modules-import-and-export)
   - [Logical and (&&) Operator and if else with Ternary Operators](#logical-and-operator-and-if-else-with-ternary-operators)
@@ -71,7 +71,223 @@
 
 <p>ES6 (ECMAScript 2015) is a major update to JavaScript that introduced many new features, making the language more powerful and easier to use.</p>
 
-1.  #### Scope
+1.  #### VAR vs LET vs CONST
+
+    1. ##### Hoisting
+
+       Hoisting means that variable declarations are moved to the top of their scope during execution, but their initialization remains in place.
+
+       ```bash
+       console.log(a);
+       var a = 10;
+       ```
+
+       ***
+
+    2. ##### Reassignable
+
+       This determines whether a variable can be assigned a new value after declaration.
+
+       ```bash
+       var x = 5;
+       x = 10;
+       console.log(x);
+       ```
+
+    ***
+
+    3. ##### Redeclarable
+
+       This determines whether a variable can be declared again in the same scope.
+
+       ```bash
+       var a = 10;
+       var a = 20;
+       console.log(a);
+       ```
+
+       ***
+
+    | Feature        |    VAR    |      LET       |     CONST      |
+    | -------------- | :-------: | :------------: | :------------: |
+    | `Hoisting`     | undefined | ReferenceError | ReferenceError |
+    | `Reassignable` |  ✅ Yes   |     ✅ Yes     |     ❌ No      |
+    | `Redeclarable` |  ✅ Yes   |     ❌ No      |     ❌ No      |
+
+> [!TIP]
+> Exercise: [w3schools - Hoisting](https://www.w3schools.com/js/exercise.asp?x=xrcise_hoisting1) <br>
+> Exercise: [w3schools - Let](https://www.w3schools.com/js/exercise.asp?x=xrcise_let1) <br>
+> Exercise: [w3schools - Const](https://www.w3schools.com/js/exercise.asp?x=xrcise_const1)
+
+---
+
+2.  #### JavaScript Destructuring
+
+      <p>The destructuring assignment syntax unpack object properties into variables</p>
+
+    ```bash
+    const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
+
+    let [fruit1, fruit2] = fruits;
+
+    console.log(fruits); // Output: ["Bananas", "Oranges", "Apples", "Mangos"]
+
+    console.log(fruit1); // Output: Bananas
+
+    console.log(fruit2); // Output: Oranges
+    ```
+
+> [!NOTE]
+> When using array destructuring, you can skip values by leaving empty spaces separated by commas.
+
+```bash
+const numbers = [10, 20, 30, 40, 50];
+const [first, , third] = numbers;
+
+console.log(first, third); // Output: 10 30
+```
+
+> [!WARNING]  
+> JavaScript destructuring work with ( Arrays, Objects, Strings ).
+
+> [!TIP]
+> Exercise: [w3schools - Destructuring](https://www.w3schools.com/js/exercise.asp?x=xrcise_destructuring1)
+
+---
+
+3.  #### Spread Operator
+
+        <p>The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
+
+        ```bash
+        const numbersOne = [1, 2, 3];
+        const numbersTwo = [4, 5, 6];
+
+        const numbersCombined = [...numbersOne, ...numbersTwo];
+
+        console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
+        ```
+
+> [!WARNING]  
+> In JavaScript, the spread operator (...) works with ( Arrays, Objects, Strings ).
+
+> [!TIP]
+> Exercise: [w3schools - Spread Operator](https://www.w3schools.com/react/exercise.asp?x=xrcise_es6_spread1)
+
+---
+
+4.  #### JavaScript-Object vs JSON-Object
+
+    | Feature       |        JavaScript-Object         |                             JSON-Object                              |
+    | ------------- | :------------------------------: | :------------------------------------------------------------------: |
+    | `Format`      |       In-memory structure        |                             Text format                              |
+    | `Value-Types` | Can include functions, undefined | Only valid JSON types (string, number, boolean, array, object, null) |
+    | `Usage`       |     Used in JavaScript code      |              Used for data exchange (e.g., APIs, files)              |
+
+> [!TIP]
+> Exercise: [w3schools - JavaScript Object](https://www.w3schools.com/js/exercise.asp?x=xrcise_objects1)<br>
+> Exercise: [w3schools - JSON Object](https://www.w3schools.com/js/exercise.asp?x=xrcise_json1)
+
+---
+
+5.  #### Function Type
+
+    1.  ##### Function Declaration
+
+        ```bash
+          function greet() {
+            return "Hello!";
+          }
+
+          console.log(greet()); // "Hello!"
+        ```
+
+    ***
+
+    2.  ##### Function Expression Anonymous
+
+        ```bash
+          const greet = function() {
+            return "Hello!";
+          };
+
+          console.log(greet()); // "Hello!"
+        ```
+
+    ***
+
+    3.  ##### Arrow Function (ES6)
+
+        ```bash
+          const greet = () => "Hello!";
+          console.log(greet()); // "Hello!"
+        ```
+
+> [!TIP]
+> Exercise: [w3schools - Function Declaration](https://www.w3schools.com/js/exercise.asp?x=xrcise_functions1)<br>
+> Exercise: [w3schools - Arrow Function](https://www.w3schools.com/js/exercise.asp?x=xrcise_arrow_function1)
+
+---
+
+6.  #### Array Higher Order Functions
+
+    1.  ##### map()
+
+        A higher-order function that `creates a new array` by `applying a given function to each element of the original array`.
+
+        ```bash
+        const numbers = [1, 2, 3, 4, 5];
+
+        const doubled = numbers.map(num => num * 2);
+
+        console.log(doubled); // Output: [2, 4, 6, 8, 10]
+        ```
+
+    ***
+
+    2.  ##### filter()
+
+        A higher-order function that creates a `new array containing` only the elements `that satisfy a specified condition`.
+
+        ```bash
+        const numbers = [1, 2, 3, 4, 5];
+
+        const evenNumbers = numbers.filter(num => num % 2 === 0);
+
+        console.log(evenNumbers); // Output: [2, 4]
+
+        ```
+
+    ***
+
+    3.  ##### forEach()
+
+        A higher-order function that executes a function on each element of an array `without creating a new array.`
+
+        ```bash
+        const numbers = [1, 2, 3, 4, 5];
+
+        numbers.forEach(num => console.log(num * 2));
+
+        // Output:
+        // 2
+        // 4
+        // 6
+        // 8
+        // 10
+        ```
+
+    ***
+
+    | Function    | Returns New Array |
+    | ----------- | :---------------: |
+    | `map()`     |      ✅ Yes       |
+    | `filter()`  |      ✅ Yes       |
+    | `forEach()` |       ❌ No       |
+
+---
+
+7.  #### Scope
 
     <p>In JavaScript, scope refers to the accessibility of variables in different parts of the code. There are three main types of scope.</p>
 
@@ -145,222 +361,6 @@
 
 > [!TIP]
 > Exercise: [w3schools - Scope](https://www.w3schools.com/js/exercise.asp?x=xrcise_scope1)
-
----
-
-2.  #### VAR vs LET vs CONST
-
-    1. ##### Hoisting
-
-       Hoisting means that variable declarations are moved to the top of their scope during execution, but their initialization remains in place.
-
-       ```bash
-       console.log(a);
-       var a = 10;
-       ```
-
-       ***
-
-    2. ##### Reassignable
-
-       This determines whether a variable can be assigned a new value after declaration.
-
-       ```bash
-       var x = 5;
-       x = 10;
-       console.log(x);
-       ```
-
-    ***
-
-    3. ##### Redeclarable
-
-       This determines whether a variable can be declared again in the same scope.
-
-       ```bash
-       var a = 10;
-       var a = 20;
-       console.log(a);
-       ```
-
-       ***
-
-    | Feature        |    VAR    |      LET       |     CONST      |
-    | -------------- | :-------: | :------------: | :------------: |
-    | `Hoisting`     | undefined | ReferenceError | ReferenceError |
-    | `Reassignable` |  ✅ Yes   |     ✅ Yes     |     ❌ No      |
-    | `Redeclarable` |  ✅ Yes   |     ❌ No      |     ❌ No      |
-
-> [!TIP]
-> Exercise: [w3schools - Hoisting](https://www.w3schools.com/js/exercise.asp?x=xrcise_hoisting1) <br>
-> Exercise: [w3schools - Let](https://www.w3schools.com/js/exercise.asp?x=xrcise_let1) <br>
-> Exercise: [w3schools - Const](https://www.w3schools.com/js/exercise.asp?x=xrcise_const1)
-
----
-
-3.  #### JavaScript Destructuring
-
-      <p>The destructuring assignment syntax unpack object properties into variables</p>
-
-    ```bash
-    const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
-
-    let [fruit1, fruit2] = fruits;
-
-    console.log(fruits); // Output: ["Bananas", "Oranges", "Apples", "Mangos"]
-
-    console.log(fruit1); // Output: Bananas
-
-    console.log(fruit2); // Output: Oranges
-    ```
-
-> [!NOTE]
-> When using array destructuring, you can skip values by leaving empty spaces separated by commas.
-
-```bash
-const numbers = [10, 20, 30, 40, 50];
-const [first, , third] = numbers;
-
-console.log(first, third); // Output: 10 30
-```
-
-> [!WARNING]  
-> JavaScript destructuring work with ( Arrays, Objects, Strings ).
-
-> [!TIP]
-> Exercise: [w3schools - Destructuring](https://www.w3schools.com/js/exercise.asp?x=xrcise_destructuring1)
-
----
-
-4.  #### Spread Operator
-
-        <p>The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
-
-        ```bash
-        const numbersOne = [1, 2, 3];
-        const numbersTwo = [4, 5, 6];
-
-        const numbersCombined = [...numbersOne, ...numbersTwo];
-
-        console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
-        ```
-
-> [!WARNING]  
-> In JavaScript, the spread operator (...) works with ( Arrays, Objects, Strings ).
-
-> [!TIP]
-> Exercise: [w3schools - Spread Operator](https://www.w3schools.com/react/exercise.asp?x=xrcise_es6_spread1)
-
----
-
-5.  #### JavaScript-Object vs JSON-Object
-
-    | Feature       |        JavaScript-Object         |                             JSON-Object                              |
-    | ------------- | :------------------------------: | :------------------------------------------------------------------: |
-    | `Format`      |       In-memory structure        |                             Text format                              |
-    | `Value-Types` | Can include functions, undefined | Only valid JSON types (string, number, boolean, array, object, null) |
-    | `Usage`       |     Used in JavaScript code      |              Used for data exchange (e.g., APIs, files)              |
-
-> [!TIP]
-> Exercise: [w3schools - JavaScript Object](https://www.w3schools.com/js/exercise.asp?x=xrcise_objects1)<br>
-> Exercise: [w3schools - JSON Object](https://www.w3schools.com/js/exercise.asp?x=xrcise_json1)
-
----
-
-6.  #### Function Type
-
-    1.  ##### Function Declaration
-
-        ```bash
-          function greet() {
-            return "Hello!";
-          }
-
-          console.log(greet()); // "Hello!"
-        ```
-
-    ***
-
-    2.  ##### Function Expression Anonymous
-
-        ```bash
-          const greet = function() {
-            return "Hello!";
-          };
-
-          console.log(greet()); // "Hello!"
-        ```
-
-    ***
-
-    3.  ##### Arrow Function (ES6)
-
-        ```bash
-          const greet = () => "Hello!";
-          console.log(greet()); // "Hello!"
-        ```
-
-> [!TIP]
-> Exercise: [w3schools - Function Declaration](https://www.w3schools.com/js/exercise.asp?x=xrcise_functions1)<br>
-> Exercise: [w3schools - Arrow Function](https://www.w3schools.com/js/exercise.asp?x=xrcise_arrow_function1)
-
----
-
-7.  #### Array Higher Order Functions
-
-    1.  ##### map()
-
-        A higher-order function that `creates a new array` by `applying a given function to each element of the original array`.
-
-        ```bash
-        const numbers = [1, 2, 3, 4, 5];
-
-        const doubled = numbers.map(num => num * 2);
-
-        console.log(doubled); // Output: [2, 4, 6, 8, 10]
-        ```
-
-    ***
-
-    2.  ##### filter()
-
-        A higher-order function that creates a `new array containing` only the elements `that satisfy a specified condition`.
-
-        ```bash
-        const numbers = [1, 2, 3, 4, 5];
-
-        const evenNumbers = numbers.filter(num => num % 2 === 0);
-
-        console.log(evenNumbers); // Output: [2, 4]
-
-        ```
-
-    ***
-
-    3.  ##### forEach()
-
-        A higher-order function that executes a function on each element of an array `without creating a new array.`
-
-        ```bash
-        const numbers = [1, 2, 3, 4, 5];
-
-        numbers.forEach(num => console.log(num * 2));
-
-        // Output:
-        // 2
-        // 4
-        // 6
-        // 8
-        // 10
-        ```
-
-    ***
-
-    | Function    | Returns New Array |
-    | ----------- | :---------------: |
-    | `map()`     |      ✅ Yes       |
-    | `filter()`  |      ✅ Yes       |
-    | `forEach()` |       ❌ No       |
 
 ---
 
