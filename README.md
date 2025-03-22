@@ -528,7 +528,7 @@ Sarah wants a JavaScript function to help kids understand even numbers in an int
 This feature will be used in an interactive math exercise where kids can enter numbers and instantly see the transformed output.
 ```
 
-<!--
+
 ### 💻 Solution
 
 ```bash
@@ -546,7 +546,7 @@ doubledNumbers.forEach(num => console.log(num));
 // 4️⃣ Add a new number dynamically
 const updatedNumbers = [...numbers, 18];
 console.log("\n Updated Number List:", updatedNumbers);
-``` -->
+``` 
 
 ---
 
