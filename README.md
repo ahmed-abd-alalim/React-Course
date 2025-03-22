@@ -157,16 +157,16 @@ console.log(first, third); // Output: 10 30
 
 3.  #### Spread Operator
 
-        <p>The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
+      <p>The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
 
-        ```bash
-        const numbersOne = [1, 2, 3];
-        const numbersTwo = [4, 5, 6];
+      ```bash
+      const numbersOne = [1, 2, 3];
+      const numbersTwo = [4, 5, 6];
 
-        const numbersCombined = [...numbersOne, ...numbersTwo];
+      const numbersCombined = [...numbersOne, ...numbersTwo];
 
-        console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
-        ```
+      console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
+      ```
 
 > [!WARNING]  
 > In JavaScript, the spread operator (...) works with ( Arrays, Objects, Strings ).
