@@ -32,7 +32,9 @@
 
 - #### [Session 2: Initial Steps](https://github.com/ahmed-abd-alalim/React-Course/tree/session-2-initial-steps)
 
-- #### [Session3: Coming Soon](https://github.com/ahmed-abd-alalim/React-Course)
+- #### [Session3: Steps Ahead](https://github.com/ahmed-abd-alalim/React-Course/tree/session-3-steps-ahead)
+- 
+- #### [Session4: Coming Soon](https://github.com/ahmed-abd-alalim/React-Course)
 
 ---
 
