@@ -1,6 +1,7 @@
 <h1 align="center">Session 1: Introduction to React 🚀</h1>
 
-![session 1](./repository-assets/session-1.jpg "React Course session 1")
+![session 1](./repository-assets/session-1.jpg "session 1")
+![topics 1](./repository-assets/topics-1.jpg "topics 1")
 
 <p align="center">This section provides an Introduction to React, covering key concepts like Types of Websites (Static, SSR, and CSR), APIs (how they work with examples), and React fundamentals such as Rendering and React DOM. A screenshot from the session’s PowerPoint is included for reference.</p>
 
