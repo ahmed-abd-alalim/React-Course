@@ -1,6 +1,7 @@
 <h1 align="center">Session 2: Initial Steps in React! 🎉</h1>
 
-![session 2](./repository-assets//session-2.jpg "session 2")
+![session 2](./repository-assets/session-2.jpg "session 2")
+![topics 2](./repository-assets/topics-2.jpg "topics 2")
 
 <p align="center">In this session, we’ll explore the foundational concepts needed to start building with React. We'll begin with an introduction to JavaScript ES6+ (ES2016) features that are essential for React development, Then, we’ll move on to setting up our first React app step by step. You'll find all the necessary links, commands, and resources in this section to guide you through the process smoothly. 🚀</p>
 
