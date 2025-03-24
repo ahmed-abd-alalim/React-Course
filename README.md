@@ -158,16 +158,16 @@ console.log(first, third); // Output: 10 30
 
 3.  #### Spread Operator
 
-        <p>The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
+      <p>The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
 
-        ```bash
-        const numbersOne = [1, 2, 3];
-        const numbersTwo = [4, 5, 6];
+      ```bash
+      const numbersOne = [1, 2, 3];
+      const numbersTwo = [4, 5, 6];
 
-        const numbersCombined = [...numbersOne, ...numbersTwo];
+      const numbersCombined = [...numbersOne, ...numbersTwo];
 
-        console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
-        ```
+      console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
+      ```
 
 > [!WARNING]  
 > In JavaScript, the spread operator (...) works with ( Arrays, Objects, Strings ).
@@ -529,7 +529,7 @@ Sarah wants a JavaScript function to help kids understand even numbers in an int
 This feature will be used in an interactive math exercise where kids can enter numbers and instantly see the transformed output.
 ```
 
-<!--
+
 ### 💻 Solution
 
 ```bash
@@ -547,12 +547,12 @@ doubledNumbers.forEach(num => console.log(num));
 // 4️⃣ Add a new number dynamically
 const updatedNumbers = [...numbers, 18];
 console.log("\n Updated Number List:", updatedNumbers);
-``` -->
+``` 
 
 ---
 
 <div align="center">
-<a href="#" >NEXT SESSION ></a>
+<a href="https://github.com/ahmed-abd-alalim/React-Course/tree/session-3-steps-ahead" >NEXT SESSION ></a>
 </div>
 
 ---
