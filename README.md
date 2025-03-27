@@ -484,12 +484,14 @@ console.log(first, third); // Output: 10 30
 
 ---
 
-2. #### Install React
+2. #### Install React + vite
+   
+   The Vite is a build tool that provides a faster development experience for modern web projects.
 
    - Install the latest version
 
      ```bash
-     npx create-react-app <app name>
+     npm create vite@latest my-react-app
      ```
 
 
