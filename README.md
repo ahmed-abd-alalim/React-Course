@@ -488,19 +488,19 @@ console.log(first, third); // Output: 10 30
    
    The Vite is a build tool that provides a faster development experience for modern web projects.
 
-   - Install the latest version
+     - Install the latest version
 
-     ```bash
-     npm create vite@latest <app-name>
-     ```
-     ```bash
-      cd <app-name>
-      ```
-      ```bash
-      npm install
-      ```
+       ```bash
+       npm create vite@latest <app-name> -- --template react
+       ```
+       ```bash
+       cd <app-name>
+       ```
+       ```bash
+       npm install
+       ```
       
-   ***
+     ***
  
     - Install the version `18.3.1` we will use in the course
   
