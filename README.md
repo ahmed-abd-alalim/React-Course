@@ -491,14 +491,23 @@ console.log(first, third); // Output: 10 30
    - Install the latest version
 
      ```bash
-     npm create vite@latest <app name>
+     npm create vite@latest <app-name>
      ```
    ***
  
-    - Install the version we will use in the course
+    - Install the version `18.3.1` we will use in the course
   
       ```bash
-      npm create vite@18.3.1 <app name>
+      npm create vite@latest <app-name> -- --template react
+      ```
+      ```bash
+      cd <app-name>
+      ```
+      ```bash
+      npm install react@18.3.1 react-dom@18.3.1
+      ```
+      ```bash
+      npm install
       ```
 
 <br>
