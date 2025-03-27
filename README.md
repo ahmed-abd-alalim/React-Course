@@ -493,6 +493,13 @@ console.log(first, third); // Output: 10 30
      ```bash
      npm create vite@latest <app-name>
      ```
+     ```bash
+      cd <app-name>
+      ```
+      ```bash
+      npm install
+      ```
+      
    ***
  
     - Install the version `18.3.1` we will use in the course
