@@ -477,8 +477,6 @@ console.log(first, third); // Output: 10 30
 
 ### Install React
 
-<p>Unfortunately, some libraries don't support the new React 19 release. This is a common issue when upgrading React versions. Therefore, I'll put you with two options. one to Install the latest version, and one to use it until the issue is resolved.</p>
-
 1. #### React Official Website
 
    - [Old Official Website](https://legacy.reactjs.org/)
@@ -494,13 +492,6 @@ console.log(first, third); // Output: 10 30
      npx create-react-app <app name>
      ```
 
-   ***
-
-   - Install the version we will use in the course
-
-     ```bash
-     npx create-react-app@18.3.1 <app name>
-     ```
 
 <br>
 
