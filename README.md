@@ -268,7 +268,7 @@ Tom needs a lightweight and easy-to-use Task Tracker for jotting down daily task
 Tom will use this feature in a personal productivity app where he tracks small tasks throughout the day.
 ```
 
-<!-- ### 💻 Solution
+### 💻 Solution
 
 ```bash
 import { useState } from "react";
@@ -308,8 +308,7 @@ const TaskList = () => {
 };
 
 export default TaskList;
-
-``` -->
+```
 
 ---
 
