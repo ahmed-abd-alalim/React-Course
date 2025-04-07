@@ -160,14 +160,14 @@ console.log(first, third); // Output: 10 30
 
       <p>The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.</p>
 
-      ```bash
-      const numbersOne = [1, 2, 3];
-      const numbersTwo = [4, 5, 6];
+    ```bash
+    const numbersOne = [1, 2, 3];
+    const numbersTwo = [4, 5, 6];
 
-      const numbersCombined = [...numbersOne, ...numbersTwo];
+    const numbersCombined = [...numbersOne, ...numbersTwo];
 
-      console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
-      ```
+    console.log(numbersCombined ); // Output: [1, 2, 3,4, 5, 6]
+    ```
 
 > [!WARNING]  
 > In JavaScript, the spread operator (...) works with ( Arrays, Objects, Strings ).
@@ -485,37 +485,42 @@ console.log(first, third); // Output: 10 30
 ---
 
 2. #### Install React + vite
-   
+
    The Vite is a build tool that provides a faster development experience for modern web projects.
 
-     - Install the latest version
+   - Install the latest version
 
-       ```bash
-       npm create vite@latest <app-name> -- --template react
-       ```
-       ```bash
-       cd <app-name>
-       ```
-       ```bash
-       npm install
-       ```
-      
-     ***
- 
-    - Install the version `18.3.1` we will use in the course
-  
-      ```bash
-      npm create vite@latest <app-name> -- --template react
-      ```
-      ```bash
-      cd <app-name>
-      ```
-      ```bash
-      npm install react@18.3.1 react-dom@18.3.1
-      ```
-      ```bash
-      npm install
-      ```
+     ```bash
+     npm create vite@latest <app-name> -- --template react
+     ```
+
+     ```bash
+     cd <app-name>
+     ```
+
+     ```bash
+     npm install
+     ```
+
+   ***
+
+   - Install the version `18.3.1` we will use in the course
+
+     ```bash
+     npm create vite@latest <app-name> -- --template react
+     ```
+
+     ```bash
+     cd <app-name>
+     ```
+
+     ```bash
+     npm install react@18.3.1 react-dom@18.3.1
+     ```
+
+     ```bash
+     npm install
+     ```
 
 <br>
 
@@ -544,8 +549,10 @@ Sarah wants a JavaScript function to help kids understand even numbers in an int
 This feature will be used in an interactive math exercise where kids can enter numbers and instantly see the transformed output.
 ```
 
-
 ### 💻 Solution
+
+<details>
+  <summary>Click on it after trying to solve it yourself 😉</summary>
 
 ```bash
 const numbers = [5, 12, 7, 20, 15, 8, 10, 3];
@@ -562,7 +569,9 @@ doubledNumbers.forEach(num => console.log(num));
 // 4️⃣ Add a new number dynamically
 const updatedNumbers = [...numbers, 18];
 console.log("\n Updated Number List:", updatedNumbers);
-``` 
+```
+
+</details>
 
 ---
 
