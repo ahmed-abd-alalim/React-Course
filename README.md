@@ -52,5 +52,3 @@
 ### License
 
 This program has been licensed under the MIT License. If you are a true FOSS (Free And Open Source Software) Lover, you wont customize this and redistribute this under your name
-
----
