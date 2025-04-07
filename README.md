@@ -245,8 +245,6 @@ React Hooks are functions that let you use state and lifecycle features in funct
 > [!TIP]
 > React Hooks were `introduced in React 16.8` to allow function components to use state and other React features that were previously only available in `class components`.
 
-<br>
-
 ---
 
 <a id="client-task"></a>
@@ -269,6 +267,9 @@ Tom will use this feature in a personal productivity app where he tracks small t
 ```
 
 ### 💻 Solution
+
+<details>
+  <summary>Click on it after trying to solve it yourself 😉</summary>
 
 ```bash
 import { useState } from "react";
@@ -309,6 +310,9 @@ const TaskList = () => {
 
 export default TaskList;
 ```
+
+</details>
+<br>
 
 ---
 
