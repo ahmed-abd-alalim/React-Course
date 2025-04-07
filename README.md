@@ -522,8 +522,6 @@ console.log(first, third); // Output: 10 30
      npm install
      ```
 
-<br>
-
 ---
 
 <a id="client-task"></a>
@@ -572,6 +570,7 @@ console.log("\n Updated Number List:", updatedNumbers);
 ```
 
 </details>
+<br>
 
 ---
 
