@@ -34,7 +34,9 @@
 
 - #### [Session 3: Steps Ahead](https://github.com/ahmed-abd-alalim/React-Course/tree/session-3-steps-ahead)
   
-- #### [Session 4: Coming Soon](https://github.com/ahmed-abd-alalim/React-Course)
+- #### [Session 4: Fourth Spark](https://github.com/ahmed-abd-alalim/React-Course/tree/session-4-fourth-spark)
+  
+- #### [Session 5: Coming Soon](https://github.com/ahmed-abd-alalim/React-Course)
 
 ---
 
